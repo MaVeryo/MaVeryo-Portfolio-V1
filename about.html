@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mahit's Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e36f1af971.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <script src="scroll.js" defer></script>
+  <link rel="icon" href="Pictures/MV.png">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/"><img src="Pictures/MV.png" alt="Logo"></a>
+      </div>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/photography">Photography</a></li>
+          <li><a href="https://docs.google.com/document/d/1_XSsNbTKQkTVoEiptV5UmdWvypSg6dF2hmHFgLBQxg8/edit?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+      <a class="fancybutton" href="/contact">
+        Contact Me
+      </a>
+    </header>
+    
+
+
+
+
+    </div>
+    <div class="largeHeader">
+      <h1>About Me</h1>
+    </div>
+  
+    <div id="briefContainer" class="briefContainer">
+      <img class="mvphoto" src="mahitv.jpg">
+      <div class="contenttwo">
+        <h5 class="heading-with-line">Driven by Passion, Defined by Dedication</h5>
+        <div class="text-container">
+          <p class="aboutparagraph">I am a driven student who is pursuing a degree in computer science with emphasis on software engineering at WPI.
+            I am driven by a passion for computer science and data science. 
+            I am committed to succeeding in every effort I take on as I explore the intriguing fields of data science, artificial intelligence, and cybersecurity. 
+            With a strong work ethic and a passion for knowledge, I strive for academic achievement while keeping a well-rounded perspective.</p>
+        </div>
+        <div class="emailSocials">
+          <p>Talk with me</p>
+
+          <div class="email">
+            <a  href="mailto:mverma@wpi.edu">mverma@wpi.edu</a>
+          </div>
+
+          <div class="icons">
+            <a href="https://github.com/MaVeryo" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-github"></i>
+            </a>  
+            <a href="https://www.linkedin.com/in/mahit-verma/" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/vermama___/" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="hidden">
+    <div id="briefContainer" class="briefContainer">
+      <div class="contenttwo hidden-left" >
+        <h5 class="heading-with-line">Introduction of a Computer Science and Data Science Student with Varied Hobbies</h5>
+        <div class="text-container">
+          <p>As a currently enrolled student at WPI, I am pursuing a degree in Computer Science with a minor in Data Science. 
+            In addition to my academic pursuits, I have a diverse range of hobbies and interests that I enjoy exploring in my free time. 
+            Some of my hobbies include traveling, photography, cars, and exploring the great outdoors. 
+            I enjoy participating in these activities and am always looking for new ways to broaden my horizons by exploring new hobbies. 
+            I strive for excellence and dedication in all aspects of my life.</p>
+        </div>
+        <div>
+          <a class="fancybutton" href="/photography">Photography Page</a>
+        </div>
+      </div>
+      <img class="hobbiesphoto hidden-right" src="Pictures/hobby.png">
+    </div>
+  </section>
+  
+  
+    <script>
+      document.getElementById("learnMoreButton").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        document.getElementById("mySContainer").scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+  
+  
+    <div id="mySContainer" class="scontainer">
+      <h2>Hobbies</h2>
+    </div>
+  
+  
+    <div id="hobbiesdescribe" class="hobbiesdescribe">
+  
+      <div class="leftthird threeSplit hidden-left">
+        <div class="travelinghobby">
+          <div class="card">
+            <img class="travelphoto" src="Pictures/travel1.jpg" viewbox="0 0 24 24">
+            <div class="card_content">
+              <p class="card_title">Pikes Place Market</p>
+              <p class="card_description">
+                47.607755, -122.339188. This photo was when I went to Seattle, which is one of the most beautiful cities I've gone too. I got the opportunity to do a mini job shadowing with my cousin who is 
+                in the CS field. I got to learn about a lot of things from the Corporate perspective to the managing the solo adult life.
+              </p>
+            </div>
+          </div>
+          <h5>Traveling</h5>
+            <p>
+              Traveling erases biases, opens my mind to diverse viewpoints and cultures, and heightens my sense of adventure. 
+              Each vacation is a chance to engage in unique activities, savor culture-rich cuisine, and immerse in the vibrant spirit of other places. 
+              It's not merely about fun; it fosters ongoing learning and personal growth. 
+              Embracing diversity and adaptability are valuable life lessons I've gained from travel, constantly broadening my horizons and fueling my passion for discovery.
+              Grateful for the world's abundance, I cherish the opportunities it offers.
+            </p>
+        </div>
+      </div>
+  
+    
+      <div class="middlethird threeSplit hidden-left">
+        <div class="photographyhobby">
+          <div class="card">
+            <img class="photophoto" src="Pictures/photography.jpg" viewbox="0 0 24 24">
+            <div class="card_content">
+              <p class="card_title">Newport Photo</p>
+              <p class="card_description">
+                41.489500, -71.318226. Although an old photo, this was taken on my iphone before I got a camera. 
+                This is still one of my favorites taken as it brings out a lot of colors from the sky and the sea,
+                yet it doesn't distract from the boats. 
+              </p>
+            </div>
+          </div>
+          <h5> Photography </h5>
+          <p> 
+            As a beginner in photography, my passion for it is driven by various reasons. 
+            I delight in tinkering with camera settings to capture the perfect shot. 
+            Post-processing and editing let me add a personal touch and create original visual stories, expressing myself creatively. 
+            Photography holds a special place in my heart as it helps me revisit and relive precious moments. 
+            It's an effective tool for stirring emotions and sharing my artistic vision, connecting with others through compelling pictures.
+          </p>
+  <br>
+  <br>
+  
+        </div>
+      </div>
+   
+      <div class="rightthird threeSplit hidden-left">
+        <div class="automobilehobby">
+          <div class="card">
+            <img class="carphoto" src="Pictures/car1.jpg" viewbox="0 0 24 24">
+            <div class="card_content">
+              <p class="card_title">3 car line-up</p>
+              <p class="card_description">
+                42.086997, -71.273242. These may seem like just cars but talking to the individuals that own the 
+                cars inspired me to do more. They talked about their hardships and failures which not many people do now a days.
+                They have told me to keep going and overall insipried me to become a better individual.
+              </p>
+            </div>
+          </div>
+          <h5>Cars</h5>
+          <p>
+            My interest in cars covers diverse aspects, including mechanical and software-based developments. 
+            The complexity and engineering marvels of different car types captivate me. 
+            Cars can become unique statement pieces through modifications allowing the owner to reflect their personality. 
+            The ever-changing automotive world inspires and excites me, fueling my passion for this hobby.
+          </p>
+          <br>
+  <br>
+  <br>
+  <br>
+        </div>
+      </div>
+    </div>
+  
+    <div id="smallportfolio" class="smallportfolio">
+      <h2>My Photography Portfolio</h2>
+    </div>
+  
+    <div class="wrapper hidden-top">
+     
+      <div id="carousel" class="carousel">
+        <img src="Pictures/carousel/bench.jpg" alt="imgC">
+        <img src="Pictures/carousel/bike.jpg" alt="imgC">
+        <img src="Pictures/carousel/bluegani.jpg" alt="imgC">
+        <img src="Pictures/carousel/boat.jpg" alt="imgC">
+        <img src="Pictures/carousel/breakwater.jpg" alt="imgC">
+        <img src="Pictures/carousel/f40.jpg" alt="imgC">
+        <img src="Pictures/carousel/pagani.jpg" alt="imgC">
+        <img src="Pictures/carousel/porsche.jpg" alt="imgC">
+        <img src="Pictures/carousel/rocks.jpg" alt="imgC">
+        <img src="Pictures/carousel/sing.jpg" alt="imgC">
+      </div>
+  
+    </div>
+  
+  
+  
+    <div class="space">
+      <pre>
+  
+  
+  
+  
+  
+  
+  
+      </pre>
+    </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="top-section">
+        <div class="icons">
+          <a href="https://github.com/MaVeryo" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github"></i>
+          </a>  
+          <a href="https://www.linkedin.com/in/mahit-verma/" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/vermama___/" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="Pictures/MV.png" alt="Logo" ></a>
+        </div>
+        <div class="email">
+          <a href="mailto:mverma@wpi.edu">mverma@wpi.edu</a>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <p>Loosely designed in Figma and coded in Visual Studio Code.<br>
+           © 2023 Mahit's Website. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

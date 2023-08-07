@@ -1,0 +1,952 @@
+/* -----------------styles.css -----------------*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  cursor: url(Pictures/black-cursor.png), auto;
+}
+
+
+/* -----------------Opening MP4 File for website-----------------*/
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#opening-video {
+  width: 20%;
+  height: 20%;
+  display: block;
+}
+
+/* -----------------Main Container for home page -----------------*/
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* -----------------Website animation. For a simple fade and come in from the left animation-----------------*/
+
+.hidden-left {
+  opacity: 0;
+  transition: opacity 1s, filter 2s, transform 2s, 300ms;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+.hidden-right {
+  opacity: 0;
+  transition: opacity 1s, filter 2s, transform 2s, 300ms;
+  filter: blur(5px);
+  transform: translateX(200%);
+}
+.hidden-top {
+  opacity: 0;
+  transition:filter 1s, transform 2s, 300ms;
+  filter: blur(5px);
+  transform: translateY(-20%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+  transition: opacity 2s, filter 2s, transform 2s;
+}
+
+
+.threeSplit:nth-child(2){
+  transition-delay: 200ms;
+}
+.threeSplit:nth-child(3){
+  transition-delay: 400ms;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/* Header for webpage */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+/* -----------------Logo placed in left corner----------------- */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right:0px;
+}
+
+/* -----------------Menu for all the options to change pages----------------- */
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 15px;
+  position: relative;
+}
+
+.menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #2F4550;
+  transition: width 0.3s;
+}
+
+.menu li a:hover::after {
+  width: 70%;
+}
+
+
+/* -----------------Fancy button! Bu Nashon Ernest, https://github.com/ernestnash, code sourced from https://uiverse.io/ -----------------*/
+.fancybutton {
+  display: inline-block;
+  padding: 0.5rem 1.0rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1C1C1C;
+  border: 3px solid #2F4550;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.fancybutton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #586F7C;
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
+
+.fancybutton:hover::before {
+  transform: translateX(0);
+}
+
+
+
+/* -----------------"Im Mahit" ----------------- */
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+
+
+/*-----------------  Description below h1 -----------------*/
+p {
+  padding-right: 0;
+  font-size: 18px;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+/* My photo! */
+.mahitphoto1 {
+  width: 35%;
+  margin-left: 20px;
+  margin-right: 70px;
+  object-fit: contain;
+}
+
+/* Content for all that */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vh;
+  margin-top: -10%;
+}
+
+.left-content {
+  flex: 1;
+}
+
+/* Small container which has the "about me" and my Photography portfolio */
+.scontainer, .smallportfolio {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.scontainer h2,
+.smallportfolio h2 {
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.scontainer h2::after,
+.smallportfolio h2::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #2F4550;
+}
+
+.smallportfolio h2 {
+  font-size: 30px;
+}
+
+/* This is a my brief container, brief about me and I utilize it in other sections to make it */
+.briefContainer {
+  justify-content: center;
+  align-items:center;
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  padding-top: 75px;
+}
+
+
+.aligned {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 1150px; 
+}
+
+.heading-text-container {
+  flex: 1;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/*languageSet list*/
+.languageSet {
+  width: 50%; 
+  margin-top: 20px;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.languageList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0;
+  margin-top:calc(10%);
+  font-size: 25px;
+}
+
+
+.languageList li {
+  text-decoration: none;
+}
+
+
+.languageSet h2 {
+  align-items: center; 
+}
+
+.heading-text-container {
+  flex: 1;
+  margin: 20px;
+}
+
+.heading-with-line {
+  position: relative;
+  align-items: center;
+}
+
+.heading-with-line::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 20%;
+  height: 2px;
+  background-color: #2F4550 ;
+}
+
+
+.heading-with-line2 {
+  position: relative;
+  align-items: center;
+}
+
+.heading-with-line2::after {
+  content: '';
+  position: relative;
+  bottom: -10px;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background-color: #2F4550 ;
+}
+
+
+.text-container {
+  margin-top: 20px;
+}
+
+.addedMargin{
+  margin-top: 10% !important;
+}
+
+.contenttwo {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+/* SCROLLING LIST ABOUT COURSE WORK */
+.courseSet {
+  width: 50%;
+  margin: 20px;
+  max-height: 40%;
+  overflow: hidden;
+}
+
+.courseList {
+  width: 100%;
+  max-height: 40%;
+  overflow-y: auto;
+  list-style: none;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.courseList li {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+}
+
+.negativeTop{
+  justify-content: space-between;
+  margin-top: -10%;
+}
+
+/* this is the hobbies photo, with all photos combined used multiple times */
+.hobbiesphoto {
+  width: 35%;
+  margin-left: 80px;
+  margin-right: 70px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.sasephoto{
+  width: 35%;
+  margin-left: 80px;
+  margin-right: 70px;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+/* Hobbies Section of home page */
+.hobbiesdescribe {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.leftthird,
+.middlethird,
+.rightthird {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50; 
+}
+
+.travelinghobby,
+.photographyhobby,
+.automobilehobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.travelphoto,
+.photophoto,
+.carphoto {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.travelphoto:hover,
+.photophoto:hover,
+.carphoto:hover {
+  transform: scale(1.01);
+}
+
+.travelinghobby h5,
+.photographyhobby h5,
+.automobilehobby h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  position: relative;
+}
+
+.travelinghobby h5::after,
+.photographyhobby h5::after,
+.automobilehobby h5::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #2F4550;
+  transition: width 0.3s;
+}
+
+.travelinghobby h5:hover::after,
+.photographyhobby h5:hover::after,
+.automobilehobby h5:hover::after {
+  width: 70%;
+}
+
+.travelinghobby p,
+.photographyhobby p,
+.automobilehobby p {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* This is gonna be the cool hover feature on each of the photos. */
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #586F7C;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card_content {
+  transform: rotateX(0);
+}
+
+.card_title {
+  margin: 0;
+  font-size: 20px !important;
+  color: #EEF0F2;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card_description {
+  font-size: 15px !important;
+  color: #FAFAFF;
+  line-height: 1.4;
+  width: fit-content;
+}
+
+/* This is the carousel which showcases some of my most favorite and most recent taken photos. */
+.wrapper {
+  max-width: 1150px;
+  padding-top: 75px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.wrapper .carousel {
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+  border-radius: 10px;
+}
+
+.carousel img:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+/* This is just a simple Section of a quote I live by */
+.quotecontainer {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  white-space: pre;
+}
+
+.bruceleequote {
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+/* Header is universal for many sections! */
+.largeHeader {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.largeHeader h1 {
+  font-size: 50px;
+  position: relative;
+}
+
+.largeHeader h1::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  height: 2px;
+  background-color: #2F4550;
+}
+
+.mvphoto {
+  width: 50%;
+  margin-left: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.contenttwo .heading-with-line {
+  font-size: 30px;
+}
+
+.aboutparagraph {
+  font-size: 15px;
+}
+
+.emailSocials .email a {
+  font-size: 20px;
+}
+
+/* Projects section */
+.projectsParagraph {
+  font-size: 15px;
+}
+
+.contenttwo .fancybutton {
+  max-width: fit-content;
+}
+
+/* Experience Section */
+.briefContainer2 {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 75px;
+}
+.briefContainer2 .heading-with-line{
+  width:50%;
+}
+.experienceParagraph {
+  font-size: 15px;
+  max-width: 100%;
+}
+
+.mvphoto2 {
+  max-width: 20%;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+  border-radius: 10%;
+}
+.mvphoto3 {
+  max-width: 30%;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+  border-radius: 10%;
+}
+.mvphoto4{
+  max-width: 30%;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+/* Photography Dump */
+.photodump {
+  max-width: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  column-count: 4;
+  column-gap: 20px;
+}
+
+.photodump img {
+  width: 20%;
+  height: auto;
+  margin: 4% auto;
+  box-shadow: -3px 5px 15px #000;
+  transition: all 0.2s;
+}
+
+@media (max-width: 1150px) {
+  #photographs {
+    column-count: 3;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  #photographs {
+    column-count: 2;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #photographs {
+    column-count: 1;
+  }
+}
+
+/* Projects page*/
+.mvsmallphoto{
+  width: 20%;
+  margin-left: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+  border-radius: 30px;;
+}
+
+.projectsParagraphForWebsite
+{
+  font-size: 15px;
+  max-width: 700px;
+}
+
+/* Contact me page for website! */
+.contactIcons {
+  position: relative;
+}
+
+.contactIcons img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.contactIcons:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay:hover {
+  cursor: pointer;
+}
+
+/* Form for website */
+.textAndForm {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+::placeholder {
+  color: whitesmoke;
+}
+
+.form-container {
+  max-width: 100%;
+  background-color: #2F4550;
+  padding: 30px;
+  border-left: 5px solid #B8DBD9;
+  border-radius: 0 15px 15px 0;
+}
+
+
+.heading {
+  display: block;
+  color: #F4F4F9;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: white;
+  width: 100%;
+  background-color: #586F7C;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #586F7C;
+  color: #F4F4F9;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #F4F4F9;
+  padding: 10px;
+  color: #586F7C;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #586F7C;
+  color: #586F7C;
+}
+
+/* Text beside form */
+.min-heightContainer{
+  min-height: 100vh;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainerTwo {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  padding-right: 50%;
+  max-width: 400px;
+}
+
+
+.text-container .messageParagraph {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* Footer for website */
+footer {
+  background-color: #F4F4F9;
+  padding: 20px;
+  color: #555;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icons {
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.email {
+  font-size: 20px;
+}
+
+.icons a,
+.email a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.icons a:hover,
+.email a:hover {
+  text-decoration: none; 
+  color: #B8DBD9; 
+}
+
+.email a:focus,
+.email a:active {
+  outline: none; 
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-family: monospace;
+}
+
+.bottom-section p {
+  font-size: 15px;
+}
+

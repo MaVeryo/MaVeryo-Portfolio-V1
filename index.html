@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mahit's Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" >
+  <script src="https://kit.fontawesome.com/e36f1af971.js" crossorigin="anonymous" ></script>
+  <script src="script.js" defer></script>
+  <script src="scroll.js" defer></script>
+  <script src="glitch.js" defer></script>
+  <link rel="icon" href="Pictures/MV.png">
+</head>
+
+<body>
+  <!-- Video Container. With java script code built in-->
+  <div id="video-container">
+    <video id="opening-video" autoplay muted preload="auto">
+      <source src="Pictures/MV.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('opening-video');
+      var videoContainer = document.getElementById('video-container');
+
+      video.onended = function() {
+        videoContainer.style.display = 'none';
+      };
+    });
+  </script>
+  <!-- Video Container. With java script code built in-, so it loads first-->
+
+
+  <div class="container">
+    <header class="hidden-top">
+      <div class="logo">
+        <a href="/"><img src="Pictures/MV.png" alt="Logo"></a>
+      </div>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/photography">Photography</a></li>
+          <li><a href="https://docs.google.com/document/d/1_XSsNbTKQkTVoEiptV5UmdWvypSg6dF2hmHFgLBQxg8/edit?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+      <a class="fancybutton" href="/contact">
+        Contact Me
+      </a>
+    </header>
+
+
+
+
+    <div class="content">
+      <div class="left-content">
+        <h1> I'm Mahit </h1>
+        <p>
+          I am currently a sophomore studying at Worcester Polytechnic Institute pursuing a degree in 
+          Computer Science with a minor in Data Science.
+          I am currently seeking a summer '24 internship in the CS/DS field. </p>
+        <a id="learnMoreButton" class="fancybutton" href="#mySContainer">Learn More</a>
+      </div>
+      <img class="mahitphoto1" src="Pictures/mahit.png">
+    </div>
+  </div>
+
+
+  <div id="mySContainer" class="scontainer hidden-top">
+    <h2>CS Related</h2>
+  </div>
+
+  <div id="briefContainer" class="briefContainer">
+    <div class="aligned">
+      <div class="heading-text-container hidden-left">
+        <h2 class="heading-with-line2 centered">Projects</h2>
+        <div class="text-container addedMargin">
+          <p class="messageParagraph">
+            Working on CS projects, DS projects, and technical/hardware products is incredibly fulfilling. 
+            Seeing everything come together and come to life is why I do it. 
+            It's the perfect blend of creativity, problem-solving, and innovation that keeps me motivated in the ever-evolving world of technology.
+          </p>
+          <a class="fancybutton" href="/projects">
+            Projects Page
+          </a>
+        </div>
+      </div>
+      <div class="languageSet hidden-left">
+        <h2 class="heading-with-line2 centered">Languages</h2>
+        <ul class="languageList">
+          <li data-hover="Proficient">Java</li>
+          <li data-hover="Proficient">Python</li>
+          <li data-hover="Beginner">C/C++</li>
+          <li data-hover="Proficient">HTML</li>
+          <li data-hover="Intermediate">CSS</li>
+          <li data-hover="Intermediate">Javascript</li>
+          <li data-hover="Intermediate">Dr.Racket</li>
+          <li data-hover="Intermediate">R</li>
+          <li data-hover="Beginner">MATLAB</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="hidden">
+    <div id="briefContainer" class="briefContainer ">
+      <div class="aligned">
+      <div class="contenttwo hidden-left" >
+        <h5 class="heading-with-line2 centered">Leadership</h5>
+        <div class="text-container">
+          <p>As the Floor Plan and Budget Manager for the Pan-Asian Committee at the WPI Chapter in Worcester, 
+            MA, I collaborated with a team to design and execute a comprehensive floor plan for a campus-wide 
+            festival while managing a budget of $2,800. Additionally, as an Events Coordinator for the Society 
+            of Asian Scientists and Engineers at the WPI Chapter, I have successfully coordinated and executed 
+            events for large groups of over 100 attendees. During these experiences, I gained valuable skills 
+            in project management, budget allocation, event coordination, and effective communication with 
+            diverse teams and partners.
+          </p>
+        </div>
+        <div>
+          <a class="fancybutton" href="https://www.saseconnect.org/" target="_blank">
+           SASE
+          </a>
+        </div>
+      </div>
+      <img class="sasephoto hidden-left" src="Pictures/SASE.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="hidden">
+  <div id="briefContainer" class="briefContainer">
+    <div class="aligned">
+      <div class="heading-text-container hidden-left">
+        <h2 class="heading-with-line2 centered">Experience</h2>
+        <div class="text-container addedMargin">
+          <p class="messageParagraph">
+            During a summer spent at Chipotle, I gained valuable skills in communication, teamwork, and time management. 
+            I thrive in team-oriented environments and foster a strong sense of camaraderie with colleagues. 
+            With these abilities, I am well-prepared for an internship in Computer Science and Data Science and eager 
+            to make meaningful contributions in a collaborative setting.
+          </p>
+          <a class="fancybutton" href="https://docs.google.com/document/d/1_XSsNbTKQkTVoEiptV5UmdWvypSg6dF2hmHFgLBQxg8/edit?usp=sharing" target="_blank">
+            Resume
+          </a>
+        </div>
+      </div>
+      <div class="courseSet hidden-left">
+        <h2 class="heading-with-line2 centered">Course Work</h2>
+        <ul class="courseList">
+          <li>Object-Oriented Design</li>
+          <li>System Programming Concepts</li>
+          <li>Intro. Data Science</li>
+          <li>Data Analysis for Decision Making</li>
+          <li>Foundations Of Computer Science</li>
+          <li>Algorithms</li>
+          <li>Software Engineering</li>
+          <li>Data Analysis and Modeling</li>
+          <li>Probability for Applications</li>
+          <li>Machine Organization and Assembly Language</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>  
+
+
+
+<div id="briefContainer" class="briefContainer negativeTop hidden-top">
+  <div class="contenttwo">
+    <h2 class="heading-with-line">What im building right now/ideas</h2>
+    <div class="text-container">
+      <p class="projectsParagraphForWebsite">
+        I have several exciting projects lined up, with a focus on taking them step by step. 
+        The first involves leveraging the Spotify API to craft a distinctive music 
+        recommendation app, spotlighting lesser-known artists based on song likes. Another 
+        project centers on a personalized finance app that uses bank APIs to offer tailored 
+        budgeting advice and insights into spending patterns across categories. Lastly, 
+        I'm keen on creating a Raspberry Pi-based heads-up display for my car, using the 
+        maps API to deliver real-time speed and limit information to enhance driving safety.
+      </p>
+    </div>
+  </div>
+  <img class="mvphoto4" src="Pictures/IdeasProjects.jpg">
+</div>
+
+<div class="space">
+  <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="top-section">
+        <div class="icons">
+          <a href="https://github.com/MaVeryo" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github"></i>
+          </a>  
+          <a href="https://www.linkedin.com/in/mahit-verma/" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/vermama___/" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="Pictures/MV.png" alt="Logo" ></a>
+        </div>
+        <div class="email">
+          <a href="mailto:mverma@wpi.edu">mverma@wpi.edu</a>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <p>Loosely designed in Figma and coded in Visual Studio Code.<br>
+           © 2023 Mahit's Website. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>
